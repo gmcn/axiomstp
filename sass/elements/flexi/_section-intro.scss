@@ -1,0 +1,47 @@
+.section-intro {
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include lg {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  h2 {
+
+    position: relative;
+
+    color: $color__secondary;
+    font-weight: 600;
+    font-size: 1.8em;
+
+    &:after {
+
+    display: block;
+    left: 0;
+    background: #00af43;
+    width: 35px;
+    height: 5px;
+    margin-top: 15px;
+    content: "";
+    }
+
+  }
+
+  &__watermark {
+
+    text-transform: uppercase;
+    line-height: .9em;
+    color: #F8F8F8;
+    font-weight: 500;
+    font-size: 140px;
+    position: absolute;
+    max-height: 130px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+  }
+
+}

@@ -1,0 +1,91 @@
+.cta-bar {
+  background: $color__primary;
+  padding: 25px 0;
+  font-weight: 400;
+  text-align: center;
+
+  @include lg {
+    text-align: left;
+    padding: 50px 0;
+  }
+
+  &_header {
+
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1em;
+
+    font-size: 25px !important;
+
+    @include md {
+      margin-bottom: 0;
+    }
+
+  }
+
+  p {
+    font-size: .9em;
+  }
+
+
+
+  &_link {
+    text-align: center;
+    margin-top: 15px;
+
+    @include lg {
+      text-align: right;
+      margin-top: 0;
+    }
+
+  }
+
+  a {
+
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    padding: 15px;
+    color: #000;
+    position: relative;
+    border: 1px solid $color__secondary;
+    font-size: .9em;
+    display: inline-block;
+
+    &:visited {
+      color: $color__secondary;
+    }
+
+    svg {
+
+      margin-left: 10px;
+
+      path {
+
+        fill: #000;
+
+      }
+
+    }
+
+    &:hover {
+
+      color: $color__secondary;
+      background: #fff;
+
+      svg {
+
+        path {
+
+          fill: $color__secondary;
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

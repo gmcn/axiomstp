@@ -1,0 +1,92 @@
+.contact_map {
+
+}
+
+.page-contact {
+
+  margin-top: 25px;
+	margin-bottom: 25px;
+
+	@include md {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	@include lg {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+  h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+
+    @include lg {
+      width: 60%
+    }
+
+
+    &:after {
+
+      vertical-align: middle;
+      content: "";
+      display: block;
+      width: 35px;
+      height: 3px;
+      background: $color__primary;
+      margin-top: 25px;
+      margin-bottom: 50px;
+
+    }
+
+  }
+
+  h3 {
+
+    font-size: 1.1em;
+    margin-top: 2.5em;
+
+    // &:before {
+    //
+    //   vertical-align: middle;
+    //   content: "";
+    //   display: block;
+    //   width: 35px;
+    //   height: 3px;
+    //   background: $color__primary;
+    //   margin-top: 5px;
+    //   margin-bottom: 50px;
+    //
+    // }
+
+  }
+
+  h4, h5 {
+    font-size: 1em;
+  }
+
+  a {
+
+		color: $color__secondary;
+    font-weight: 300;
+
+		&:hover {
+
+			color: $color__primary;
+
+		}
+
+	}
+
+  p {
+    font-weight: 600;
+  }
+
+  input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], input[type=number], input[type=tel], input[type=range], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime], input[type=datetime-local], input[type=color], textarea {
+    background: #F9F9F9;
+    border: 1px solid #EEEEEE;
+    width: 100%;
+  }
+
+
+}

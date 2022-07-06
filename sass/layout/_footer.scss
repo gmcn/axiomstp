@@ -1,0 +1,282 @@
+footer {
+  background: $color__primary;
+
+  color: $color__secondary;
+
+  padding: 25px;
+
+  @include md {
+    padding: 30px 55px;
+  }
+
+  @include lg {
+    padding: 65px 110px 30px;
+  }
+
+  text-align: center;
+
+  @include md {
+    text-align: left;
+  }
+
+  font-weight: 300;
+
+  h1, h2, h3, h4, h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  ul#menu-top-links {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+
+        a {
+
+          position: relative;
+          font-weight: 500;
+          padding-left: 15px;
+          color: $color__secondary;
+
+          &:hover {
+            color: #fff;
+          }
+
+          &:before {
+
+            position: absolute;
+            left: 0;
+            content: "";
+            background: url(images/footer__nav_arrow.svg) center center no-repeat;
+            top: 7px;
+            height: 5px;
+            width: 5px;
+
+          }
+
+      }
+
+    }
+
+
+  }
+
+  address {
+
+    font-size: .9em;
+
+    line-height: 2em;
+
+    a {
+
+      color: $color__secondary;
+
+      &:hover {
+        color: #fff;
+      }
+
+
+    }
+
+    .footer__social {
+
+      margin-top: 15px;
+
+
+      a {
+        display: inline-flex;
+      }
+
+
+      span {
+        display: inline-flex;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 5px;
+      }
+
+
+      svg {
+
+        height: 13px;
+        margin-right: 10px;
+
+        path {
+          // fill: $color__primary;
+          transition: .5s;
+        }
+
+        &:hover {
+          path {
+            fill: #fff;
+          }
+        }
+
+      }
+
+    }
+
+    .social_share {
+
+      span {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-right: 10px;
+      }
+
+
+    }
+
+  }
+
+  .title, strong {
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  p.address {
+    margin-bottom: 25px;
+
+  }
+
+  svg.logo {
+    margin-bottom: 35px;
+  }
+
+  & .site-info {
+
+    p.title {
+      margin-bottom: 20px;
+    }
+
+    span {
+      display: block;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    form {
+
+      @include md {
+        width: 65%;
+      }
+
+    }
+
+    input[type=text] {
+
+      width: 100%;
+      background: none;
+      border: 1px solid $color__secondary;
+
+    }
+
+    form {
+      position: relative;
+    }
+
+
+    input[type=submit] {
+    background: url(images/newsletter-submit.png) no-repeat;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    height: 19px;
+    width: 20px;
+    top: 20px;
+    right: 25px;
+    color: transparent;
+
+  }
+
+  }
+
+  .signature {
+
+    border-top: 1px solid #000;
+    margin: 15px;
+    padding: 30px 0 0 0;
+
+    &__nav {
+
+      #menu-signature-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        display: flex;
+        justify-content: flex-start;
+
+        flex-flow: column wrap;
+
+        @include md {
+          flex-flow: nowrap;
+        }
+
+        li {
+
+            &:first-of-type {
+              padding-left: 0;
+
+              a {
+                padding-left: 0;
+              }
+
+            }
+
+            &:last-of-type {
+
+              a {
+                border-right: none;
+              }
+
+            }
+
+            a {
+
+              letter-spacing: .5px;
+
+              @include md {
+                border-right: 1px solid #fff;
+                padding: 0 15px;
+              }
+
+              color: $color__secondary;
+
+              &:hover {
+                color: #fff;
+              }
+
+          }
+
+        }
+
+
+      }
+
+    }
+
+    &__copy {
+
+      // text-align: center;
+
+      padding: 25px;
+
+      @include lg {
+        text-align: right;
+        padding: 0;
+      }
+
+    }
+
+
+  }
+
+}

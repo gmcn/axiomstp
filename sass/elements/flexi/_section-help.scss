@@ -1,0 +1,93 @@
+.section-help {
+
+  background: $color__primary;
+
+  &__wrap {
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+
+    p.video-title {
+      color: #fff;
+      font-size: 1.5em;
+      font-weight: 600;
+
+      @include lg {
+        font-size: 1.9em;
+      }
+    }
+
+
+  }
+
+  .align-self-center {
+    width: 100%;
+  }
+
+  .card-header {
+    border-bottom: 1px solid rgba(255,255,255, .3);
+    font-weight: 600;
+    font-size: 24px;
+    color: $color__secondary;
+    // background: none;
+    padding: 0.75rem 0;
+    width: 100%;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    a {
+      color: $color__secondary;
+      font-weight: 600;
+      font-size: 22px;
+      padding: 0.375rem 0;
+      text-decoration: none;
+    }
+
+  }
+
+  .card-body {
+
+    padding: 1.25rem 0 .5rem 0;
+
+    p {
+      margin-bottom: 0
+    }
+
+  }
+
+  p.title {
+
+    margin-bottom: 15px;
+    margin-top: 25px;
+
+    @include md {
+      margin-top: 0;
+    }
+
+  }
+
+  p.title {
+
+    font-weight: 600;
+    font-size: 24px;
+    color: $color__secondary;
+    background: none;
+
+    a {
+      color: $color__secondary;
+      font-weight: 600;
+      font-size: 24px;
+      padding: 0.375rem 0;
+    }
+
+  }
+
+
+
+}

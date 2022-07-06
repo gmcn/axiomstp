@@ -1,0 +1,268 @@
+.section-team {
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @include md {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  @include lg {
+    margin-top: 105px;
+    margin-bottom: 105px;
+  }
+
+  &__mission {
+
+    &_wrap {
+
+      padding-left: 2.5px !important;
+      padding-right: 2.5px !important;
+
+    }
+
+    color: #fff;
+
+    padding: 40px;
+    background: $color__secondary;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 5px);
+
+    #accordion {
+      margin-bottom: 30px;
+    }
+
+
+    .card-header {
+      border-bottom: 1px solid rgba(255,255,255, .3);
+      font-weight: 600;
+      font-size: 24px;
+      color: $color__primary;
+      background: none;
+      padding: 0.75rem 0;
+      width: 100%;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+
+
+      a {
+
+
+
+
+
+      }
+
+
+
+      a {
+        color: $color__primary;
+        font-size: 22px;
+        padding: 0.375rem 0;
+        text-decoration: none;
+        width: 100%;
+        background: url(images/footer__nav_arrow_green_active.svg) no-repeat center right;
+        text-align: left;
+
+        &.collapsed {
+          background: url(images/footer__nav_arrow_green.svg) no-repeat center right;
+        }
+
+        span {
+          font-weight: 600;
+        }
+
+      }
+
+    }
+
+    .card-body {
+
+      padding: 1.25rem 0 .5rem 0;
+
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+
+    }
+
+    p.title {
+
+      margin-bottom: 25px;
+
+    }
+
+    p.title {
+
+      font-weight: 600;
+      font-size: 24px;
+      color: $color__primary;
+      background: none;
+
+      a {
+        color: $color__primary;
+        font-weight: 600;
+        font-size: 24px;
+        padding: 0.375rem 0;
+      }
+
+    }
+
+
+  }
+
+  &__meet {
+
+    &_wrap {
+
+      padding-left: 2.5px !important;
+      padding-right: 2.5px !important;
+
+    }
+
+
+    padding: 40px;
+    background: $color__primary;
+    position: relative;
+    width: 100%;
+    height: calc(100% - 5px);
+    color: $color__secondary;
+
+    @include xl {
+      background: url(images/meet-team_bg.svg) no-repeat 110% 100% $color__primary;
+    }
+
+    h3 {
+
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 50px;
+
+
+      &:after {
+        display: block;
+        background: #fff;
+        margin-top: 5px;
+        width: 25px;
+        height: 2px;
+        content: "";
+      }
+
+
+    }
+
+    p {
+
+      @include xl {
+        width: 50%;
+      }
+
+    }
+
+  }
+
+  &__member {
+
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 2.5px !important;
+    padding-right: 2.5px !important;
+    font-size: 14px;
+
+    img {
+
+      @include xl {
+
+        max-height: 375px;
+
+      }
+
+
+    }
+
+    &:hover {
+
+      .section-team__member_details {
+
+        opacity: 1;
+
+      }
+
+    }
+
+    &_details {
+      padding: 25px;
+      opacity: 0;
+      transition: .5s;
+      background: rgba(255, 255, 255, .9);
+      position: absolute;
+      border: 10px solid $color__primary;
+      top: 0;
+      left: 2.5px;
+      width: calc(100% - 5px);
+      height: 100%;
+
+      a {
+
+        color: $color__secondary;
+
+        &:hover {
+          color: $color__primary;
+        }
+
+      }
+
+      .name {
+
+        font-weight: 600;
+        // text-transform: uppercase;
+        margin-bottom: 10px;
+        font-size: 21px;
+
+        &:after {
+          display: block;
+          background: $color__primary;
+          margin-top: 0;
+          width: 20px;
+          height: 2px;
+          content: "";
+        }
+
+
+      }
+
+      .details {
+
+        color: $color__primary;
+        margin-bottom: 50px;
+        font-weight: 600;
+
+      }
+
+      .contact {
+
+        margin-bottom: 0;
+
+        span {
+
+          text-transform: uppercase;
+          font-weight: 600;
+
+        }
+
+      }
+
+    }
+
+
+
+
+  }
+
+}

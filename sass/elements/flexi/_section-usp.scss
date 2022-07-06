@@ -1,0 +1,57 @@
+.section-usps {
+
+  background: $color__primary;
+  color: $color__secondary;
+
+  padding: 30px !important;
+
+  @include lg {
+
+    padding: 45px 60px !important;
+
+  }
+
+
+
+  text-align: center;
+
+  h4 {
+
+    font-weight: 700;
+    font-size: 1.35em;
+
+    margin: 0 auto;
+
+    @include md {
+      width: 60%;
+    }
+
+    &:after {
+      margin-top: 15px !important;
+      margin-bottom: 25px !important;
+      display: block;
+      margin: 0 auto;
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: #fff;
+    }
+
+  }
+
+  &__usp {
+
+    img {
+      margin-bottom: 25px;
+    }
+
+    padding: 0 30px !important;
+
+  }
+
+  p {
+    font-weight: 200;
+  }
+
+
+}

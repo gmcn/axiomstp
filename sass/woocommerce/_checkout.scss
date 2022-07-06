@@ -1,0 +1,16 @@
+form.woocommerce-checkout {
+  padding: 0px !important;
+  input.input-text {
+    border: 1px solid #EBEBEB !important;
+    background-color: #fff;
+  }
+  #customer_details {
+    margin-bottom: 50px;
+  }
+  button {
+    border:0px !important;
+  }
+  .woocommerce-input-wrapper {
+    width:100%;
+  }
+}

@@ -1,0 +1,130 @@
+.section_copy_gallery {
+
+  background: $color__primary;
+
+  padding: 40px 15px 25px 15px !important;
+
+  @include md {
+    padding: 120px 65px 50px 65px !important;
+
+  }
+
+  @include xxl {
+    padding: 120px 125px 50px 125px !important;
+    // margin-top: 250px;
+  }
+
+  @include xxl {
+    margin-top: 250px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.85em;
+    margin-bottom: 35px;
+  }
+
+
+  &__gallery {
+    position: relative;
+
+    .swiper-button-next, .swiper-button-prev {
+
+      svg {
+        path {
+          fill: $color__secondary;
+          transition: .5s;
+        }
+      }
+
+      &:hover {
+
+        svg {
+          path {
+            fill: $color__primary;
+          }
+        }
+
+
+      }
+
+    }
+
+
+    .swiper-button-next {
+
+      position: absolute;
+      top: auto !important;
+      bottom: 0;
+      right: 0 !important;
+      background: #fff;
+      height: 70px;
+      width: 70px;
+
+      &:after {
+        display: none;
+      }
+
+    }
+
+    .swiper-button-prev {
+
+      position: absolute;
+      top: auto !important;
+      bottom: 0;
+      right: 70px !important;
+      left: auto;
+      background: #fff;
+      height: 70px;
+      width: 70px;
+
+      &:after {
+        display: none;
+      }
+
+    }
+
+
+  }
+
+  ._js__gallery {
+
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    // height: 600px;
+
+    @include md {
+      height: 600px;
+    }
+
+    @include xl {
+      position: absolute;
+      bottom: 0;
+      height: 200%;
+
+    }
+
+
+    img {
+
+      width: 100%;
+
+         @include md {
+
+           position: absolute;
+           bottom: 0;
+         }
+
+
+    }
+
+  }
+
+
+
+
+}

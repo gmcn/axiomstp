@@ -1,0 +1,55 @@
+.section-brands {
+
+  background: $color__secondary;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    position: relative;
+
+    &:after {
+      // position: absolute;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background: $color__primary;
+      width: 40px;
+      height: 5px;
+      margin-top: 30px;
+      content: "";
+    }
+
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: .9em;
+    padding: 0 25px;
+  }
+
+  a {
+
+    color: $color__primary;
+    font-weight: 500;
+    display: block;
+
+    &:hover {
+      color: #fff;
+    }
+
+  }
+
+}

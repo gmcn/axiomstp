@@ -1,0 +1,28 @@
+/* TEAM */
+
+  Project Manager: Rachel Haynes
+  Contact: rachel [at] creativemediani.com
+  Website: https://www.creativemediani.com
+  From: Northern Ireland
+
+  Designer: Nigel Morrison
+  Contact: nigel [at] creativemediani.com
+  Website: https://www.creativemediani.com
+  From: Northern Ireland
+
+  Web Developer: Donna Strain
+  Contact: donna [at] creativemediani.com
+  Website: https://www.creativemediani.com
+  From: Northern Ireland
+
+  Web Developer: Gary McNally
+  Contact: gary [at] creativemediani.com
+  Website: https://www.creativemediani.com
+  From: Northern Ireland
+
+/* SITE */
+
+  Site Live: 22/06/22
+  Last update: 23/06/22
+  Doctype: HTML5
+  IDE: Wordpress, Bootstrap, SASS, swiper.js, fancybox.js

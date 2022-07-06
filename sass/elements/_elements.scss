@@ -1,0 +1,89 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+.container-fluid {
+
+	// overflow-y: hidden;
+
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
+
+.social_share {
+
+	width: 100%;
+	padding: 0;
+	color: #000;
+	display: inline-block;
+	list-style: none;
+	margin: 35px 0 0 0;
+
+	svg {
+
+		height: 14px;
+
+		path {
+			fill: $color__secondary;
+			transition: .5s;
+		}
+
+		&:hover {
+			path {
+				fill: #fff;
+			}
+		}
+
+	}
+
+	li  {
+		margin-right: 5px;
+		display: inline-block;
+		text-align: center;
+	}
+
+}
+
+@import "flexi/hero";
+@import "flexi/section-intro";
+@import "flexi/simple-paragraph";
+@import "flexi/section_multi_cta";
+@import "flexi/section-brands";
+@import "flexi/section-testimonials";
+@import "flexi/section-stats";
+@import "flexi/section-cta";
+@import "flexi/social-row";
+@import "flexi/section-usp";
+@import "flexi/section-help";
+@import "flexi/latest-products";
+@import "flexi/product-cat";
+@import "flexi/section-team";
+@import "flexi/section_copy_gallery";

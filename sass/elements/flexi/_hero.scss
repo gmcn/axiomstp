@@ -1,0 +1,270 @@
+.heroSwiper {
+
+  height: 40vh;
+
+  @include md {
+    height: calc(75vh - 200px);
+  }
+
+  @include lg {
+    height: calc(100vh - 100px);
+  }
+
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+
+  .swiper-slide {
+
+    position: relative;
+
+    &:before {
+
+      height: 100%;
+      width: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0);
+
+    }
+
+    &:after {
+
+      height: 100%;
+      width: 100%;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5);
+
+    }
+
+    video {
+
+      @include md_down {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+
+
+
+    &__content {
+      position: absolute;
+      z-index: 9999;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+    }
+
+    h1 {
+      // position: relative;
+      font-weight: 600;
+
+      &:after {
+
+        display: block;
+
+        width: 35px;
+        height: 5px;
+
+        margin-top: 15px;
+        margin-bottom: 15px !important;
+        background: $color__primary;
+        content: "";
+
+        @include md_down {
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+        }
+
+        @include lg {
+
+          width: 75px;
+
+        }
+
+      }
+
+      span {
+        color: $color__secondary;
+      }
+
+      text-align: center;
+      line-height: .9em;
+
+      color: #fff;
+
+
+
+      margin: 0 0 15px 0;
+      font-size: 38px;
+
+      @include md {
+        text-align: left;
+      }
+
+      @include lg {
+
+        font-size: 55px;
+        width: 70%;
+        margin: 0 0 25px 0;
+
+      }
+
+      // @include lg {
+      //
+      //   font-size: 83px;
+      //
+      // }
+
+    }
+
+    a {
+
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: .5px;
+      padding: 10px 20px;
+      display: inline-block;
+      // border-radius: 5px;
+      margin-bottom: 15px;
+      font-size: .7em;
+      width: 48%;
+      text-align: center;
+
+      @include md {
+        padding: 15px 20px;
+      }
+
+      @include lg {
+        font-size: .8em;
+        margin-bottom: 0;
+        width: auto;
+      }
+
+      svg {
+        margin-left: 5px;
+      }
+
+      &:nth-of-type(1) {
+        background: $color__primary;
+        border: 1px solid $color__primary;
+        margin-right: 10px;
+        color: #000;
+
+        svg {
+
+          path {
+            fill: $color__secondary;
+          }
+
+        }
+
+
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+
+      &:nth-of-type(2) {
+        border: 1px solid #fff;
+        text-shadow: 2px 2px 25px #000;
+        svg {
+
+          path {
+            fill: #fff;
+          }
+
+        }
+
+        &:hover {
+          background: $color__primary;
+          color: #fff;
+        }
+      }
+
+    }
+
+  }
+
+
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4em;
+    // text-shadow: 2px 2px 12px #000;
+
+    @include md {
+
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+
+    @include lg {
+      font-size: 24px;
+      width: 70%;
+      // font-size: 28px;
+    }
+
+  }
+
+  .swiper-button-prev {
+
+    color: rgba(#fff, .5);
+    transition: .5s;
+    left: 0;
+
+    width: 50px;
+    padding: 30px;
+
+    border-radius: 0 5px 5px 0;
+
+    @include lg {
+      width: 100px;
+      padding: 50px;
+    }
+
+    &:hover {
+      // background: $yellow;
+      color: rgba(#fff, 1);
+    }
+
+  }
+
+  .swiper-button-next {
+
+    color: rgba(#fff, .5);
+    transition: .5s;
+    right: 0;
+    width: 50px;
+    padding: 30px;
+
+    @include lg {
+      width: 100px;
+      padding: 50px;
+    }
+
+    border-radius: 5px 0 0 5px;
+
+    &:hover {
+      // background: $yellow;
+      color: rgba(#fff, 1);
+    }
+
+  }
+
+}
