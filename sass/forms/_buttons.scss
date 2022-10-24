@@ -29,7 +29,7 @@ input[type="reset"],
 input[type="submit"] {
 
 	background: $color__primary;
-	color: #fff;
+	color: #000;
 	text-transform: uppercase;
 	line-height: 1;
 	padding: 20px 30px;
@@ -52,7 +52,16 @@ input[type="submit"] {
 .wpcf7-submit {
 
 margin-top: 15px;
-background: $color__primary url(images/footer__nav_arrow.svg) no-repeat 90% 50% !important;
+background: $color__primary url(images/footer__nav_arrow_black.svg) no-repeat 90% 50% !important;
 padding: 20px 40px 20px 30px !important;
+transition: .5s;
+border: 1px solid $color__primary !important;
+
+&:hover {
+
+	color: $color__primary;
+	background: transparent url(images/footer__nav_arrow_green.svg) no-repeat 90% 50% !important;
+
+}
 
 }

@@ -72,6 +72,11 @@
 
     .woocommerce-widget-layered-nav-list__item {
       padding: 6px 0;
+
+      span.count {
+        display: none;
+      }
+
       a {
       font-size:14px;
        }
@@ -156,15 +161,30 @@
       }
 
       h2.woocommerce-loop-product__title {
-        color: $color__primary;
+        color: $color__secondary;
+        transition: .5s;
+        font-weight: 600;
       }
       .woocommerce-Price-amount {
-        color:$color__secondary;
+        color:$color__primary;
+        transition: .5s;
         font-size:18px;
+        font-weight: 600;
       }
       img {
         border: 1px #b0b0b0 solid;
       }
+
+      &:hover {
+
+        h2.woocommerce-loop-product__title {
+          color: $color__primary;
+
+      }
+
+    }
+
+
     }
   }
 }

@@ -114,15 +114,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 				</div><!-- .site-info -->
 				<div class="offset-md-1 col-md-3">
 
@@ -134,14 +125,14 @@
 						Calgary, AB T2E 7N7</p>
 
 						<strong>PHONE</strong>	 <a href="tel:1-866-617-8502">1-866-617-8502</a><br />
-						<strong>EMAIL</strong>	 <a href="mailto:sales@axiomsp.ca">sales@axiomsp.ca</a><br />
+						<strong>EMAIL</strong>	 <a href="mailto:sales@axiomtsp.com">sales@axiomtsp.com</a><br />
 						<strong>DISTRIBUTION CENTRES</strong>   BC | AB | MB | ON
 
 						<div class="footer__social">
 							<span>Stay in touch</span>
 
 
-									<a href="https://www.linkedin.com/company/axiomsurfaceprotection" target="_blank">
+									<a href="https://www.linkedin.com/company/axiomtsp" target="_blank">
 
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path></svg>
 
@@ -149,7 +140,7 @@
 									</a>
 
 
-									<a href="https://www.instagram.com/axiomsurfaceprotection/" target="_blank">
+									<a href="https://www.instagram.com/axiomtsp/" target="_blank">
 
 										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
 										<g id="logo-instagram" transform="translate(-32 -32)">
@@ -161,7 +152,7 @@
 
 									</a>
 
-									<a href="https://twitter.com/" target="_blank" title="Twitter">
+									<a href="https://twitter.com/axiomtsp" target="_blank" title="Twitter">
 
 										<svg xmlns="http://www.w3.org/2000/svg" width="20.923" height="17" viewBox="0 0 20.923 17">
 											<g id="twitter" transform="translate(0 -48)">
@@ -174,7 +165,7 @@
 									</a>
 
 
-									<a href="https://www.facebook.com/Axiom-Surface-Protection-Inc-277511646015681/" target="_blank" title="Facebook">
+									<a href="https://www.facebook.com/axiomtsp" target="_blank" title="Facebook">
 
 										<svg xmlns="http://www.w3.org/2000/svg" width="8.501" height="17" viewBox="0 0 8.501 17">
 											<path id="facebook" d="M13.136,2.823h1.552V.12A20.04,20.04,0,0,0,12.427,0c-2.238,0-3.77,1.407-3.77,3.994V6.375H6.187V9.4H8.656V17h3.027V9.4h2.369l.376-3.022H11.683V4.294c0-.873.236-1.471,1.453-1.471Z" transform="translate(-6.187)"></path>

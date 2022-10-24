@@ -16,14 +16,20 @@
     font-weight: 600;
     font-size: 1.8em;
 
+    @include lg {
+
+      font-size: 2.4em;
+
+    }
+
     &:after {
 
     display: block;
     left: 0;
     background: #00af43;
-    width: 35px;
+    width: 45px;
     height: 5px;
-    margin-top: 15px;
+    margin-top: 5px;
     content: "";
     }
 

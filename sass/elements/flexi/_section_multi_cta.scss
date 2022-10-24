@@ -1,7 +1,7 @@
 .section-multi-cta {
 
   position: relative;
-  z-index: 9999999;
+  z-index: 1;
 
   @include lg {
     margin-top: -75px;
@@ -179,7 +179,7 @@
         &:hover {
 
           background: $color__primary;
-          color: #fff;
+          color: #fff !important;
 
         }
 

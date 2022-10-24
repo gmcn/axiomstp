@@ -3,7 +3,7 @@
 
     <div class="col-md-2 social-row__item">
 
-      <a href="https://www.facebook.com/Axiom-Surface-Protection-Inc-277511646015681/" target="_blank" title="Facebook">
+      <a href="https://www.facebook.com/axiomtsp" target="_blank" title="Facebook">
 
 				<svg xmlns="http://www.w3.org/2000/svg" width="8.501" height="17" viewBox="0 0 8.501 17">
 					<path id="facebook" d="M13.136,2.823h1.552V.12A20.04,20.04,0,0,0,12.427,0c-2.238,0-3.77,1.407-3.77,3.994V6.375H6.187V9.4H8.656V17h3.027V9.4h2.369l.376-3.022H11.683V4.294c0-.873.236-1.471,1.453-1.471Z" transform="translate(-6.187)"></path>
@@ -16,7 +16,7 @@
 
     <div class="col-md-2 social-row__item">
 
-      <a href="https://twitter.com/AxiomSurfacePro" target="_blank" title="Twitter">
+      <a href="https://twitter.com/axiomtsp" target="_blank" title="Twitter">
 
 				<svg xmlns="http://www.w3.org/2000/svg" width="20.923" height="17" viewBox="0 0 20.923 17">
 					<g id="twitter" transform="translate(0 -48)">
@@ -33,7 +33,7 @@
 
     <div class="col-md-2 social-row__item">
 
-      <a href="https://www.linkedin.com/company/axiomsurfaceprotection" target="_blank">
+      <a href="https://www.linkedin.com/company/axiomtsp" target="_blank">
 
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
 
@@ -44,7 +44,7 @@
 
     <div class="col-md-2 social-row__item">
 
-      <a href="https://www.instagram.com/axiomsurfaceprotection/" target="_blank">
+      <a href="https://www.instagram.com/axiomtsp/" target="_blank">
 
 				<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
   				<g id="logo-instagram" transform="translate(-32 -32)">

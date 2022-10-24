@@ -1,15 +1,8 @@
-<?php //echo do_shortcode('[products limit="4" columns="4" class="quick-sale" ]') ?>
 <div class="container">
 
   <?php
-  $args = array(
-    'post_type' => 'product',
-    'posts_per_page' => 12,
-  );
-  $query = new WP_Query( $args );
-  if ( $query->have_posts() ) : ?>
-
-
+    $featured_products = get_sub_field('product_selection');
+    if( $featured_products ): ?>
 
       <div class="latest-products">
 
@@ -19,14 +12,26 @@
 
         <div class="swiper _js_latestproducts">
           <div class="swiper-wrapper ">
-            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+
+            <?php foreach( $featured_products as $featured_product ):
+                $permalink = get_permalink( $featured_product->ID );
+                $title = get_the_title( $featured_product->ID );
+                $content = get_the_content( $featured_product->ID );
+                $custom_field = get_field( 'field_name', $featured_product->ID );
+                ?>
+
+
               <div class="swiper-slide">
                 <div class="swiper-slide__thumbnail_wrap">
 
-                  <?php the_post_thumbnail();
+                  <?php
 
 
-                  $product = new WC_Product( get_the_ID() );
+                  echo get_the_post_thumbnail($featured_product->ID, 'large');
+
+
+                  $product = new WC_Product( $featured_product->ID );
                   $attachment_ids = $product->get_gallery_image_ids();
 
                   if ( is_array( $attachment_ids ) && !empty($attachment_ids) ) {
@@ -37,7 +42,7 @@
 
                    ?>
 
-                  <a href="<?php the_permalink(); ?>">
+                  <a href="<?php echo $permalink; ?>">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="16.003" height="16.002" viewBox="0 0 16.003 16.002">
       						  <path id="Search" d="M1604.806,97.865l-3.847-3.846a6.738,6.738,0,1,0-.944.944l3.847,3.844a.667.667,0,1,0,.944-.941Zm-9.063-2.72a5.4,5.4,0,1,1,5.4-5.4A5.409,5.409,0,0,1,1595.744,95.145Z" transform="translate(-1589 -82.999)"></path>
@@ -48,14 +53,14 @@
 
                 </div>
 
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <?php echo wp_trim_words( get_the_content(), 20, '...' ); ?>
+                <h3><a href="<?php echo $permalink; ?>"><?php echo $title ; ?></a></h3>
+                <?php echo wp_trim_words( $content, 20, '...' ); ?>
 
 
-                <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
+                <?php $price = get_post_meta( $featured_product->ID, '_price', true ); ?>
                 <span class="woocommerce-Price-amount"><?php echo wc_price( $price ); ?></span>
               </div>
-            <?php endwhile; ?>
+            <?php endforeach; ?>
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -66,6 +71,5 @@
 
 
   <?php endif; ?>
-  <?php wp_reset_postdata(); ?>
 
 </div>

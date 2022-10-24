@@ -75,7 +75,8 @@ get_header(); ?>
 
 					</a>
 
-					<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<?php echo the_title() ?> - <?php echo the_permalink() ?>" target="_blank">
+					<a href="https://www.linkedin.com/shareArticle?mini=true&summary=<?php echo the_excerpt() ?>&title=<?php echo the_title() ?>&url=<?php echo the_permalink() ?>" target="_blank">
+
 
 						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
 							<path id="logo-linkedin" d="M47.64,32H33.453A1.387,1.387,0,0,0,32,33.324V47.543A1.5,1.5,0,0,0,33.453,49H47.636A1.42,1.42,0,0,0,49,47.543V33.324A1.3,1.3,0,0,0,47.64,32ZM37.27,46.17H34.834V38.6H37.27Zm-1.133-8.724h-.017a1.324,1.324,0,1,1,.017,0ZM46.17,46.17H43.735V42.03c0-.992-.354-1.67-1.236-1.67a1.332,1.332,0,0,0-1.249.9,1.64,1.64,0,0,0-.084.6V46.17H38.731V38.6h2.435v1.054a2.466,2.466,0,0,1,2.2-1.231c1.6,0,2.808,1.054,2.808,3.326Z" transform="translate(-32 -32)"></path>

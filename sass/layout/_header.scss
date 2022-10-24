@@ -18,19 +18,35 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
 
 }
 
+.navbar-toggler>.close {
+    display:inline;
+    // width: 1.5em;
+    // height: 1.5em;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+    width: 20px !important;
+    height: 30px !important;
+    font-weight: 200;
+}
+
 .mega-menu {
+
   li.nav-item:nth-child(2) {
     width: 50%;
     float: left;
   }
+
   li.nav-item:nth-child(3) {
     width: 50%;
     float: left;
   }
+
   li.nav-item:nth-child(1) {
     width: 100%;
     float: left;
   }
+
   li.nav-item {
 
     &:hover {
@@ -90,12 +106,16 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
 
       span {
         position: absolute;
-        bottom: 15px;
+        bottom: 5px;
         z-index: 999999;
+        font-weight: 600;
+        font-size: .9em;
 
 
         &:after {
 
+          margin-top: 15px;
+          margin-bottom: 10px;
           content: 'SHOP NOW';
           background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='5.737' height='6.609' viewBox='0 0 5.737 6.609'%3e%3cpath id='polygon9' d='M34.326,17.6l-5.737-3.3V20.9Z' transform='translate(-28.589 -14.294)' fill='%23fff'%3e%3c/path%3e%3c/svg%3e") no-repeat right center;
           display: block;
@@ -173,6 +193,11 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
 
 .dropdown-menu {
 
+  background: $color__primary;
+  height: 340px;
+  box-shadow: 0 0 10px #000;
+  border-radius: 0;
+
 
   padding: 0 !important;
   right: 0 !important;
@@ -180,7 +205,15 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
   left: auto !important;
 
   &.show {
-    display: flex !important;
+
+    display: none !important;
+
+    @include md {
+      display: flex !important;
+    }
+
+
+
   }
 
   p {
@@ -188,27 +221,29 @@ ul.nav li.menu-item-has-children:hover > ul.dropdown-menu {
   }
 
   ul.dropdown-menu {
-
+    box-shadow: none;
+    background: $color__primary;
     border: 0;
     top: 0;
     display: block !important;
+
     width: 100%;
 
   }
 
   a {
 
-    background: url(images/green__nav_arrow.svg) no-repeat 95% 50%;
+    background: url(images/black__nav_arrow.svg) no-repeat 95% 50%;
     background-size: 6px 6px;
     padding-top: 10px;
     padding-bottom: 8.5px;
 
     &:hover {
 
-      background: url(images/green__nav_arrow.svg) no-repeat 90% 50%;
+      background: url(images/black__nav_arrow.svg) no-repeat 90% 50%;
       background-size: 6px 6px;
 
-      color: $color__primary !important;
+      color: #fff !important;
 
     }
 
@@ -232,6 +267,17 @@ header {
 
   position: relative;
 
+  .nav__primary {
+    width: 100%;
+
+    @include md {
+      display: none !important
+    }
+
+
+
+  }
+
   a.navbar-brand {
 
     max-width: 25%;
@@ -243,11 +289,19 @@ header {
 
   .navbar {
     background: $color__primary;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include sm {
+      padding-top: 25px;
+      padding-bottom: 25px;
+
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
     @include md {
       padding-left: 55px;
@@ -538,7 +592,7 @@ header {
       span {
         font-size: 13px;
         display: inline-flex;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         // padding-right: 10px;
       }
@@ -547,6 +601,8 @@ header {
       svg {
 
         height: 10px;
+        width: 10px;
+        margin-left: 5px;
 
         path {
           fill: $color__primary;
@@ -573,7 +629,7 @@ header {
 
       span {
         font-size: 13px;
-        font-weight: 600;
+        font-weight: 700;
         padding-left: 10px;
         text-transform: uppercase;
       }

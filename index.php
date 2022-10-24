@@ -57,9 +57,9 @@ get_header(); ?>
 
 			?>
 
-			<div class="masonry-item gallery-item <?php echo "__js_" . implode( ' __js_', $cats ); ?>" style="background: url(<?php echo the_post_thumbnail_url('medium'); ?>) center center; background-size: cover;">
+			<div class="masonry-item gallery-item <?php echo "__js_" . implode( ' __js_', $cats ); ?>" style="background: url(<?php echo the_post_thumbnail_url('full'); ?>) center center; background-size: cover;">
 
-				<?php echo the_post_thumbnail('large'); ?>
+				<?php //echo the_post_thumbnail('large'); ?>
 
 
 				<div class="align-self-end">

@@ -38,7 +38,7 @@
 
 
 
-              <div class="col-md-4 product-cat_list__cat wow fadeInUp" style="background: url(<?php echo $image; ?>)">
+              <div class="col-md-4 product-cat_list__cat wow fadeInUp" style="background: url(<?php echo $image; ?>) no-repeat center center; background-size: cover;">
 
                 <h3><?php echo $cat->name; ?></h3>
 

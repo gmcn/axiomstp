@@ -138,18 +138,23 @@
       background: url(images/meet-team_bg.svg) no-repeat 110% 100% $color__primary;
     }
 
-    h3 {
+    h2 {
 
       font-weight: 600;
       font-size: 24px;
-      margin-bottom: 50px;
+      margin-bottom: 15px;
+
+      @include md {
+        font-size: 28px;
+      }
 
 
       &:after {
         display: block;
         background: #fff;
         margin-top: 5px;
-        width: 25px;
+        margin-bottom: 10px;
+        width: 30px;
         height: 2px;
         content: "";
       }
@@ -158,6 +163,9 @@
     }
 
     p {
+
+      font-weight: 400;
+      color: #212529;
 
       @include xl {
         width: 50%;
@@ -220,7 +228,7 @@
 
       .name {
 
-        font-weight: 600;
+        font-weight: 700;
         // text-transform: uppercase;
         margin-bottom: 10px;
         font-size: 21px;
@@ -229,7 +237,7 @@
           display: block;
           background: $color__primary;
           margin-top: 0;
-          width: 20px;
+          width: 30px;
           height: 2px;
           content: "";
         }
@@ -241,7 +249,7 @@
 
         color: $color__primary;
         margin-bottom: 50px;
-        font-weight: 600;
+        font-weight: 700;
 
       }
 

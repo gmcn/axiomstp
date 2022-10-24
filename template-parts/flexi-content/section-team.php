@@ -1,8 +1,15 @@
 <?php
 
+$teamHeading = get_sub_field('team_intro_heading');
+$teamCopy = get_sub_field('team_intro_copy');
+
+$ourMission = get_sub_field('our_mission');
+$ourVision = get_sub_field('our_vision');
+$ourValues = get_sub_field('our_values');
 
 
  ?>
+
 
 
  <section class="container section-team">
@@ -27,10 +34,7 @@
 
                <div class="align-self-center">
 
-
-                   <div id="accordion">
-
-
+                   <div id="teamsteps">
 
                     <div class="card-header" id="heading1">
 
@@ -39,9 +43,9 @@
 
                     </div>
 
-                    <div id="collapse1" class="collapse <!--show-->" aria-labelledby="heading1" data-parent="#accordion">
+                    <div id="collapse1" class="collapse <!--show-->" aria-labelledby="heading1" data-parent="#teamsteps">
                       <div class="card-body">
-                        <p>Providing a complete range of innovative temporary surface protection solutions that exceed customer expectations, and making it easy for construction professionals to protect finished surfaces, resulting in the satisfaction of all stakeholders.</p>
+                        <?php echo $ourMission ?>
                       </div>
                     </div>
 
@@ -55,9 +59,10 @@
 
                     </div>
 
-                    <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordion">
+                    <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#teamsteps">
                       <div class="card-body">
-                      <p>To be the primary provider of temporary surface protection solutions to construction professionals in North America. </p>              </div>
+                      <?php echo $ourVision ?>
+                      </div>
                     </div>
 
 
@@ -70,15 +75,12 @@
 
                     </div>
 
-                    <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordion">
+                    <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#teamsteps">
                       <div class="card-body">
 
-                          <p><strong>INTEGRITY</strong> – We are upright and can be trusted to do the right thing.</p>
-                          <p><strong>CONTINUOUS IMPROVEMENT</strong> – We are always learning and growing. If there’s a better way to do something, we embrace it.</p>
-                          <p><strong>TEAM SPIRIT</strong> – People are our greatest asset. We value everyone and work together as one team.</p>
-                          <p><strong>GIVING BACK</strong> – We have a generosity mindset and believe in adding value to our circle of influence.</p>
+                            <?php echo $ourValues; ?>
 
-                        </div>
+                      </div>
                     </div>
 
 
@@ -113,13 +115,15 @@
          </div>
 
          <?php if ($i == 4): ?>
+
            <div class="col-xl-8 section-team__meet_wrap">
 
              <div class="section-team__meet">
-               <h3>Meet the Team</h3>
 
-                <p>We have a team of temporary surface protection experts ready to assist you with your project needs, no matter how big or small they are! Reach out to us by phone, text, email, or our online form and we will respond quickly - the #TeamAxiom way.
-                </p>
+               <h2><?php echo $teamHeading ?></h2>
+
+
+                <p><?php echo $teamCopy ?></p>
              </div>
 
            </div>
@@ -134,7 +138,7 @@
                <div class="align-self-center">
 
 
-                   <div id="accordion">
+                   <div id="teamsteps">
 
 
 
@@ -145,9 +149,9 @@
 
                     </div>
 
-                    <div id="collapse1" class="collapse <!--show-->" aria-labelledby="heading1" data-parent="#accordion">
+                    <div id="collapse1" class="collapse <!--show-->" aria-labelledby="heading1" data-parent="#teamsteps">
                       <div class="card-body">
-                        <p>Providing a complete range of innovative temporary surface protection solutions that exceed customer expectations, and making it easy for construction professionals to protect finished surfaces, resulting in the satisfaction of all stakeholders.</p>
+                        <?php echo $ourMission ?>
                       </div>
                     </div>
 
@@ -161,9 +165,10 @@
 
                     </div>
 
-                    <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordion">
+                    <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#teamsteps">
                       <div class="card-body">
-                      <p>To be the primary provider of temporary surface protection solutions to construction professionals in North America. </p>              </div>
+                        <?php echo $ourVision ?>
+                      </div>
                     </div>
 
 
@@ -176,14 +181,10 @@
 
                     </div>
 
-                    <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordion">
+                    <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#teamsteps">
                       <div class="card-body">
 
-                          <p><strong>INTEGRITY</strong> – We are upright and can be trusted to do the right thing.</p>
-                          <p><strong>ICONTINUOUS IMPROVEMENT</strong> – We are always learning and growing. If there’s a better way to do something, we embrace it.</p>
-                          <p><strong>ITEAM SPIRIT</strong> – People are our greatest asset. We value everyone and work together as one team.</p>
-                          <p><strong>IGIVING BACK</strong> – We have a generosity mindset and believe in adding value to our circle of influence.</p>
-
+                          <?php echo $ourValues ?>
                         </div>
                     </div>
 
